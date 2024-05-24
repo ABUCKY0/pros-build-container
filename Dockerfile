@@ -28,8 +28,3 @@ RUN pros --version nocache
 
 # check if arm-none-eabi-gcc is installed
 RUN arm-none-eabi-g++ --version
-
-# entrypoint 
-#ENTRYPOINT ["./build.sh"]
-
-# CMD ["./build.sh"]

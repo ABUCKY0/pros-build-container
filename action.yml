@@ -1,6 +1,6 @@
 # action.yml
-name: 'Pros Build'
-description: 'Build a PROS Project'
+name: 'PROS Setup'
+description: 'Setup the Build Process for a PROS Project'
 runs:
   using: 'docker'
   image: 'Dockerfile'
