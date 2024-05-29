@@ -1,5 +1,13 @@
 FROM ubuntu:20.04
 #FROM python:3.8
+
+
+LABEL version="1.0" \
+      description="This is a base image that builds an environment capable of building PROS projects." \
+      maintainer="@ABUCKY0 (And LemLib Contributors)"
+
+
+
 # Avoid timezone prompt during package installation
 ENV DEBIAN_FRONTEND=noninteractive
 RUN echo "tzdata tzdata/Areas select America" | debconf-set-selections \
