@@ -17,6 +17,11 @@ RUN ls -a
 # install python3
 RUN apt-get install -y python3-minimal python3-pip
 
+# install nodejs core
+RUN apt-get install -y nodejs npm
+
+# install unzip
+RUN apt-get install -y unzip
 # install pros-cli
 RUN python3 -m pip install pros-cli
 
