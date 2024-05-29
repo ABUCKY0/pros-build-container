@@ -1,5 +1,11 @@
 FROM ubuntu:20.04
 #FROM python:3.8
+# Avoid timezone prompt during package installation
+ENV DEBIAN_FRONTEND=noninteractive
+RUN echo "tzdata tzdata/Areas select America" | debconf-set-selections \
+    && echo "tzdata tzdata/Zones/America select Los_Angeles" | debconf-set-selections
+
+
 # Install wget
 RUN apt-get update
 RUN apt-get install -y wget git
