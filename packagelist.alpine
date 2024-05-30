@@ -1,0 +1,8 @@
+build-base
+jq
+wget
+git
+gawk
+python3
+py3-pip
+unzip

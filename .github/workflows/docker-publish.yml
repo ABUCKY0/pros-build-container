@@ -12,6 +12,11 @@ on:
     branches: [ "main" ]
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
+    paths-ignore:
+      - "README.md"
+      - "LICENSE"
+      - "packagelist.alpine"
+      - "alpine.Dockerfile"
   pull_request:
     branches: [ "main" ]
 
