@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Docker Build
 
 on:
   push:
@@ -6,6 +6,8 @@ on:
     paths-ignore:
       - "README.md"
       - "LICENSE"
+      - "packagelist.alpine"
+      - "alpine.Dockerfile"
   pull_request:
     branches: [ "main" ]
 
