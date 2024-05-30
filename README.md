@@ -1,4 +1,5 @@
 # PROS Build Container
+[![Docker Image CI](https://github.com/ABUCKY0/pros-build-container/actions/workflows/docker-image.yml/badge.svg)](https://github.com/ABUCKY0/pros-build-container/actions/workflows/docker-image.yml)
 
 A Base Container that builds everything required for [PROS-Build](https://github.com/ABUCKY0/pros-build)
 
